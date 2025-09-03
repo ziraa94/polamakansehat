@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengapa Makanan Sehat Itu Penting?</title>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: whitesmoke; /* Warna latar belakang umum */
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #057833; /* Warna header */
+            color: #fff;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        nav.main-nav {
+            background-color: #c4dfe6; /* Warna navigasi */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav.main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav.main-nav ul li {
+            margin: 0 15px;
+        }
+        nav.main-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav.main-nav ul li a:hover {
+            background-color: whitesmoke; 
+            border-radius: 5px;
+        }
+        .food-banner {
+            width: 100%;
+            height: 200px; 
+            background-color: whitesmoke; /* Warna latar banner */
+            background-image: url('https://cdn.vectorstock.com/i/500p/88/59/sketch-healthy-food-vector-51088859.jpg'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            box-sizing: border-box;
+            color: black; /* Warna teks banner */
+            font-size: 2em;
+            font-weight: 700;
+            text-shadow: 2px 2px 3px #c4dfe6;
+        }
+        .content-wrapper {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 800px;
+            margin-right: 20px;
+            background-color: #fdfdfd; /* Warna latar sidebar */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .sidebar-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid whitesmoke; /* Garis pemisah sidebar */
+            padding-bottom: 15px;
+        }
+        .sidebar-section:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            color: #057833; /* warna judul sidebar */
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #c4dfe6; /* Garis bawah judul sidebar */
+            padding-bottom: 5px;
+        }
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .sidebar p, .sidebar ul {
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #555;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .sidebar ul li:before {
+            content: "• ";
+            color: #057833; /* Warna bullet point */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+     
+        }
+        .sidebar .img {
+            width: calc(33.333% - 10px);
+            margin: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid #c4dfe6; /* Border gambar galeri */
+        }
+        .main-content {
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            font-size: 1.8em;
+            color: #057833;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #c4dfe6; /* Garis bawah judul utama */
+            padding-bottom: 10px;
+        }
+        .main-content h3 {
+            font-size: 1.4em;
+            color: #057833; /* Warna sub-judul */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .main-content h4 {
+            font-size: 1.1em;
+            color: #057833;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        .content-card {
+            background-color: #c4dfe6; /* Warna latar kartu event */
+            padding: 15px;
+            border-left: 5px solid #057833; /* Garis kiri kartu event */
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .content-card strong {
+            color: #057833; /* Warna teks tebal di kartu event */
+        }
+        .content-card ul {
+            list-style: decimal;  
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .tips-section {
+            background-color: wheat; /* Warna latar bagian tips */
+            padding: 15px;
+            border: 1px dashed #057833; /* Border tips */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .tips-section ul {
+            list-style: disc;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #057833; /* Warna footer */
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo-text">POLA MAKAN SEHAT</span>
+            <span style="font-size: 0.8em; margin-left: 5px;"></span>
+        </header>
+        <nav class="main-nav">
+        
+            <a href="https://www.briliofood.net/resep/11-menu-masakan-rumahan-sehat-tanpa-digoreng-ini-bergizi-mudah-dibuat-dan-cocok-buat-diet-240913w.html">Contoh Resep Makanan Sehat</a>    
+          
+        </nav>
+
+        <div class="food-banner">
+            Bagaimana cara menerapkan pola makan sehat?
+        </div>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Jenis Pilihan Makanan Sehat</h3> 
+                     <!-- sidebar pertama -->
+                    <ul>
+                        <li>Sayur-sayuran</li>
+                        <li>Buah-buahan</li>
+                        <li>Daging dan Telur </li>
+                        <li>Kacang-kacangan dan Biji-bijian</li>
+                        <li>Susu dan Produk Olahannya</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Manfaat</h3>
+                    <ul>
+                        <li>Meningkatkan Daya Tahan Tubuh</li>
+                        <li>Menjaga Kesehatan Jantung</li>
+                        <li>Mengontrol Berat Badan</li>
+                        <li>Meningkatkan Kesehatan Mental</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Pyramid</h3>
+                        <img src="poto/makanansehatpiramid.jpg" alt="piramid makanan">
+                </div>
+            </aside>
+                <!-- Konten utama -->
+            <main class="main-content">
+                <h2>Langkah-Langkah Dalam Menerapkan Pola Makan Sehat</h2>
+               
+                <div class="content-card">
+                    <h4>1. Aturlah Jam Makan Kamu Sejak Saat ini</h4>
+                    <p>Jadi kamu memang makan pada jam-jam tertentu yang sudah anda atur sebelumnya. 
+                        Misalnya kamu mengatur jam makan kamu yaitu 3 kali sehari dengan jam yang sudah ditentukan.
+                        Ini bertujuan untuk menghindari makan makanan yang tidak perlu di jam-jam yang lain yang bisa menyebabkan obesitas.
+                    </p>
+                    
+                </div>
+
+                <div class="content-card">
+                    <h4>2. Makanlah Sayur dan Buah-buahan Segar</h4>
+                    <p>
+                        Untuk mengimbangi nutrisi yang kamu konsumsi, tentunya kamu harus mengkonsumsi berbagai 
+                        macam mineral dan juga vitamin yang ada di dalam buah dan sayur.
+                    </p>
+                </div>
+
+                <div class="content-card">
+                    <h4>3. Hindari Makanan Yang Mengandung Lemak Tinggi</h4>
+                    <p>
+                        Sangat penting untuk menghindari makanan yang berlemak tinggi seperti contohnya adalah gorengan,
+                        daging berlemak, kulit ayam, dan juga makanan yang bersantan. Makanan yang mengandung lemak tinggi dapat 
+                        menyebabkan penumpukkan kolestrol dalam darah yang bisa menyumbat aliran darah.
+                   </p>
+                </div>
+
+                <div class="content-card">
+                    <h4>4. Makan Karbohidrat Secukupnya Saja</h4>
+                    <p>Karbohidrat merupakan sumber energi bagi tubuh. Karbohidrat akan di ubah menjadi glukosa dalam tubuh yang bisa
+                        menghasilkan energi. 
+                    </p>
+                </div>
+
+                <h3>Tahukah Kamu?</h3>
+                <div class="tips-section">
+                    <ul>
+                        <p>
+                            Dengan mengatur pola makan kita yang baik sejak dini, maka bisa mecegah terjadinya penyakit-penyakit kronis seperti <strong>Diabetes Mellitus, Kanker, Darah Tinggi,</strong>
+                    dan masih banyak lagi penyakit lainnya yang mungkin bisa ditimbulkan oleh salah menerapkan pola makan dan itu bisa berpengaruh dengan kesehatan
+                    jantung, otak, dan mata. Untuk itu sangat penting untuk mulai mengatur dan memperhatikannya saat ini.
+                        </p>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; Pemrograman Web : Syifa Nazira.</p>
+        </footer>
+    </div>
+</body>
+</html>
