@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"], input[type="password"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .checkbox-group, .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: beige;
+        }
+
+        .checkbox-group label, .radio-group label {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Form Input Data Anak Fasilkom-TI</h2>
+    <br><br>
+    <form action="#" method="POST">
+        <!-- Text Input -->
+        <div class="form-group">
+            <label for="text">Nama:</label>
+            <input type="text" id="text" name="text" placeholder="Masukkan nama kamu" required>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+        </div>
+
+        <!-- Textarea Input -->
+        <div class="form-group">
+            <label for="textarea">Motto:</label>
+            <textarea id="textarea" name="textarea" placeholder="Tuliskan motto kamu" required></textarea>
+        </div>
+
+        <!-- Radio Button Input -->
+        <div class="form-group radio-group">
+            <label><strong>Program Studi:</strong></label>
+            <div>
+                <input type="radio" id="ti" name="prodi" value="ti">
+                <label for="ti">Teknologi Informasi</label>
+            </div>
+            <div>
+                <input type="radio" id="ilkomp" name="prodi" value="ilkomp">
+                <label for="ilkomp">Ilmu Komputer</label>
+            </div>
+        </div>
+
+        <!-- Checkbox Input -->
+        <div class="form-group checkbox-group">
+            <label><strong>Hobi:</label></strong>
+            <div>
+                <input type="checkbox" id="hobby1" name="hobby" value="music">
+                <label for="hobby1">Musik</label>
+            </div>
+            <div>
+                <input type="checkbox" id="hobby2" name="hobby" value="sports">
+                <label for="hobby2">Olahraga</label>
+            </div>
+             <div>
+                <input type="checkbox" id="hobby3" name="hobby" value="sleep">
+                <label for="hobby2">Tidur</label>
+            </div>
+             <div>
+                <input type="checkbox" id="hobby4" name="hobby" value="draw">
+                <label for="hobby2">Menggambar</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- Select Option -->
+        <div class="form-group">
+            <label for="foods">Pilih Makanan Fav:</label>
+            <select id="foods" name="foods" required>
+                <option value="">Pilih yang kamu suka...</option>
+                <option value="Nasgor">Nasi Goreng</option>
+                <option value="Mie Goreng">Mie Goreng</option>
+                <option value="Ayam Geprek">Ayam Geprek</option>
+                <option value="Sate">Sate</option>
+                <option value="Martabak">Martabak</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Kirim</button>
+    </form>
+</div>
+
+</body>
+</html>
